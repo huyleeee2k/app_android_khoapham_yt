@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.LienheActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarLienHe"
+        app:title="Liên hệ"
+        app:titleTextColor="@color/colorPrimary"
+        android:background="#4D93B3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:background="@drawable/background_use_android"
+        android:layout_below="@id/toolBarLienHe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:textSize="22sp"
+            android:background="@drawable/boder"
+            android:padding="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/li_n_h_v_i_ch_ng_t_i_myadmin_n_s_3_l_h_ng_phong_th_nh_ph_hu"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:textSize="22sp"
+            android:layout_below="@id/textView1"
+            android:background="@drawable/boder"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/c_ng_ty_tnhh_m_t_th_nh_vi_n_h2n_n_tr_ng_ban_l_v_n_a_n_ph_ban_nguy_n_v_n_b"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:textSize="22sp"
+            android:layout_below="@id/textView2"
+            android:background="@drawable/boder"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/li_n_h_v_i_ch_ng_t_i_n_facebook_l_ng_c_huy_n_zalo_0365368531"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

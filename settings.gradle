@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "App Ban Do DienTu Onlline"

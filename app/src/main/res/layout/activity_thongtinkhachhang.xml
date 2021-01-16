@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#673AB7"
+    tools:context=".activity.Thongtinkhachhang">
+
+    <RelativeLayout
+        android:background="@drawable/boder"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginStart="45dp"
+            android:id="@+id/textViewTTKH"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#f10"
+            android:layout_marginTop="10dp"
+            android:text="@string/th_ng_tin_kh_ch_h_ng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="30dp"
+            android:id="@+id/textInput1"
+            android:layout_below="@id/textViewTTKH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <EditText
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:paddingStart="10dp"
+                android:id="@+id/edittenKhachHang"
+                android:hint="@string/nh_p_t_n_kh_ch_h_ng"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                tools:ignore="RtlSymmetry" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="30dp"
+            android:id="@+id/textInput2"
+            android:layout_below="@id/textInput1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:paddingStart="10dp"
+                android:id="@+id/editSDT"
+                android:hint="@string/nh_p_s_i_n_tho_i_kh_ch_h_ng"
+                android:inputType="phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                tools:ignore="RtlSymmetry" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="30dp"
+            android:id="@+id/textInput3"
+            android:layout_below="@id/textInput2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:id="@+id/editemailKH"
+                android:hint="@string/nh_p_email_kh_ch_h_ng"
+                android:inputType="textEmailAddress"
+                android:paddingStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                tools:ignore="RtlSymmetry" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_marginStart="70dp"
+            android:id="@+id/buttonXacNhan"
+            android:layout_marginBottom="20dp"
+            android:background="#4DC8AB"
+            android:text="@string/x_c_nh_n"
+            android:layout_marginTop="30dp"
+            android:textColor="#193E63"
+            android:layout_below="@id/textInput3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/buttonHuy"
+            android:layout_marginBottom="20dp"
+            android:background="#4DC8AB"
+            android:text="@string/h_y"
+            android:layout_marginTop="30dp"
+            android:textColor="#193E63"
+            android:layout_marginStart="40dp"
+            android:layout_toEndOf="@id/buttonXacNhan"
+            android:layout_below="@id/textInput3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

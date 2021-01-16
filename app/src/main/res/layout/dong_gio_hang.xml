@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:adjustViewBounds="true"
+        android:id="@+id/imgGioHang"
+        android:layout_margin="10dp"
+        android:src="@android:color/darker_gray"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/todo" />
+    
+    <TextView
+        android:focusable="false"
+        android:textColor="#000000"
+        android:id="@+id/txtTenSpGioHang"
+        android:textSize="25sp"
+        android:text="@string/t_n_s_n_ph_m"
+        android:layout_margin="10dp"
+        android:layout_toEndOf="@id/imgGioHang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="#f10"
+        android:id="@+id/txtGiaGioHang"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/imgGioHang"
+        android:text="@string/gi_m_n_h_ng"
+        android:layout_below="@id/txtTenSpGioHang"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txtGiaGioHang"
+        android:layout_toEndOf="@id/imgGioHang"
+        android:id="@+id/buttonTruGH"
+        android:text="@string/tru"
+        android:textSize="25sp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:background="@null"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txtGiaGioHang"
+        android:layout_toEndOf="@id/buttonTruGH"
+        android:id="@+id/buttonHienThiSoluongGH"
+        android:text="@string/_1"
+        android:textSize="25sp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txtGiaGioHang"
+        android:layout_toEndOf="@id/buttonHienThiSoluongGH"
+        android:id="@+id/buttonCongGH"
+        android:text="@string/cong"
+        android:textSize="25sp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+
+</RelativeLayout>
